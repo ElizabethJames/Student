@@ -3,12 +3,12 @@ error_reporting(0);
 $to = $_GET["to"];
 $from = $_GET["from"];
 guide($to,$from);
-echo "Sure! Follow Me!!";
 function guide($to, $from)
 {
 	include('config.php');
 if (session_status() == PHP_SESSION_NONE) {
     session_start();
+	echo "Sure! Follow Me!! ";
 }
 $sql = "select * from floorplan where L='$to' or R='$to';";
 $result=mysqli_query($conn,$sql);
@@ -416,12 +416,12 @@ else
 	//{                                                 
 		if($row['L/R']=="L" && $row1['L/R']=="R")       
 		{                                               
-			echo "Please proceed to GPX which is situated to the center once you enter the left wing. ";
+			echo "Now proceed to GPX which is situated to the center once you enter the left wing. ";
 			guide($to, "GPX");                          
 		}                                               
 		else if($row['L/R']=="R" && $row1['L/R']=="L")  
 		{                                               
-			echo "Please proceed to New Bridge which is situated to your right once you enter the right wing. ";
+			echo "Now proceed to New Bridge which is situated to your right once you enter the right wing. ";
 			guide($to, "New Bridge");                    
 		}                                               
 		else                                            
