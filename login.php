@@ -194,7 +194,7 @@ document.getElementById('demo').innerHTML = ''
                 <div class="title visible-lg visible-md " style="float: left; display:inline-block;padding-left: 2px; " >
                     FR. C. RODRIGUES INSTITUTE oF TECHNOLOGY
                 </div>
-                <div style="float:left;display: inline-block;padding-left: 1vw">
+              <!--  <div style="float:left;display: inline-block;padding-left: 1vw">
                     <a class="navbar-brand visible-sm  visible-xs" href="#" style="height: 92px;">
                        <img src="fcritlogo.png" style="width: 70px;height:70px;float: left; ">
                     </a>
@@ -205,7 +205,7 @@ document.getElementById('demo').innerHTML = ''
                 </div>
                 <div class="title visible-sm" style="float: left; display:inline-block;padding-left: 1vw; font-size: 25px;" >
                     FR. C. RODRIGUES INSTITUTE oF TECHNOLOGY
-                </div>
+                </div>-->
                 
             </div>
         </div>
@@ -218,14 +218,14 @@ document.getElementById('demo').innerHTML = ''
 <form name="login_form" method="post" action="loginauthenticate.php" > 
 </br></br>
 <center> 
-<input type="text" name="rollnumber" onblur="val()" maxlength=6 placeholder="Roll No.">
+<input type="text" name="rollnumber" maxlength=6 placeholder="Roll No.">
 </br><p id="error" class="error1"></p></br>
 <input type="password" name="password" placeholder="Password"><span id="pass"></span></br></center>
 <p id="demo" class="error1"></p>
 <a href="GenPass.php" style="font-size: 17px;  font-family: 'Dosis', sans-serif;float:right;" >New User? Generate Password.</a></br></br>
 <a href="ForgetPass.php" style="font-size: 17px; font-family: 'Dosis', sans-serif; float: right;" >Forgot Password?</a>
 </br></br>
-<center><input type="submit" value="Login" style="font-family: 'Dosis', sans-serif;float: center;"></center> 
+<center><input type="submit" value="Login" onclick="val()" style="font-family: 'Dosis', sans-serif;float: center;"></center> 
 </form>
 
 </div>
