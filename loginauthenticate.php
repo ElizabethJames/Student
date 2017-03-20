@@ -26,7 +26,7 @@ if ($result->num_rows > 0)
     }
 } else {
    
-$_SESSION['var']=5;
+$_SESSION['var']=1;
 header('Location:login.php');
 }
 $connect->close();
